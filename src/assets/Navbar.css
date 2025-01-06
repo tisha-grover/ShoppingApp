@@ -1,0 +1,136 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin: 20px auto;
+  }
+  
+  /* Logo */
+  .navbar-left .navbar-logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(90deg, #ff7eb3, #ff758c);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-left .navbar-logo:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 0 0 16px rgba(255, 120, 180, 0.8);
+  }
+  
+  .navbar-left .logo-highlight {
+    color: #ffd700;
+    font-weight: bold;
+  }
+  
+  /* Navbar Right Section */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Greeting */
+  .navbar-greeting {
+    font-size: 16px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  
+  /* Cart Link */
+  .navbar-cart {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(145deg, #27ae60, #2ecc71);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-cart:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(39, 174, 96, 0.5);
+  }
+  
+  .cart-badge {
+    background: #e74c3c;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: -10px;
+  }
+  
+  /* Logout Button */
+  .navbar-logout {
+    background: linear-gradient(145deg, #c0392b, #e74c3c);
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-logout:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(231, 76, 60, 0.6);
+  }
+  
+  /* Login & Register Links */
+  .navbar-link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(145deg, #2980b9, #3498db);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(52, 152, 219, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .navbar-right {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
